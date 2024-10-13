@@ -1152,10 +1152,19 @@
                                           <div class="bdt-contact-form-wrapper">
                                             <form
                                               class="bdt-contact-form-form bdt-form-stacked bdt-grid bdt-grid-small without-recaptcha"
-                                              data-bdt-grid=""
-                                              action="http://localhost/rcn/wp-admin/admin-ajax.php"
-                                              method="post"
+                                              action="https://api.web3forms.com/submit"
+                                              method="POST"
                                             >
+                                              <input
+                                                type="hidden"
+                                                name="access_key"
+                                                value="5d56bb54-f1b7-4347-936a-1feeb57e7bb2"
+                                              />
+                                              <input
+                                                type="hidden"
+                                                name="subject"
+                                                value="I want to Contact"
+                                              />
                                               <div
                                                 class="bdt-field-group elementor-field-required bdt-width-1-1"
                                               >
@@ -1164,7 +1173,7 @@
                                                     type="text"
                                                     name="name"
                                                     id="user_namedf2414c"
-                                                    placeholder="Your Name"
+                                                    placeholder="Your Full Name"
                                                     class="bdt-input bdt-form-default"
                                                     required="required"
                                                   />
@@ -1178,7 +1187,7 @@
                                                     type="email"
                                                     name="email"
                                                     id="emaildf2414c"
-                                                    placeholder="example@email.com"
+                                                    placeholder="Email"
                                                     class="bdt-input bdt-form-default"
                                                     required="required"
                                                   />
@@ -1198,44 +1207,16 @@
                                                   ></textarea>
                                                 </div>
                                               </div>
-                                              <input
-                                                type="hidden"
-                                                class="widget_id"
-                                                name="widget_id"
-                                                value="df2414c"
-                                              />
-                                              <input
-                                                type="hidden"
-                                                name="bdt-sf-df2414c"
-                                                value="true"
-                                              />
-                                              <input
-                                                type="hidden"
-                                                class="page_id"
-                                                name="page_id"
-                                                value="68"
-                                              />
                                               <div
                                                 class="elementor-field-type-submit bdt-field-group bdt-flex bdt-width-1-1"
                                               >
                                                 <button
                                                   type="submit"
                                                   class="elementor-button bdt-button bdt-button-primary"
-                                                  name="submit"
                                                 >
-                                                  <span> Subscribe </span>
+                                                  <span> Contact Now! </span>
                                                 </button>
                                               </div>
-                                              <input
-                                                name="_wpnonce"
-                                                value="565e7525ca"
-                                                type="hidden"
-                                              />
-                                              <input
-                                                type="hidden"
-                                                name="action"
-                                                value="element_pack_contact_form"
-                                              />
                                             </form>
                                           </div>
                                         </div>
