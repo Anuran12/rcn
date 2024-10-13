@@ -1117,10 +1117,21 @@
                               <div class="elementor-widget-container">
                                 <div class="bdt-newsletter-wrapper">
                                   <form
-                                    action="http://localhost/rcn/wp-admin/admin-ajax.php"
                                     class="bdt-mailchimp bdt-grid bdt-grid-small bdt-flex-middle"
                                     bdt-grid
+                                    action="https://api.web3forms.com/submit"
+                                    method="POST"
                                   >
+                                    <input
+                                      type="hidden"
+                                      name="access_key"
+                                      value="5d56bb54-f1b7-4347-936a-1feeb57e7bb2"
+                                    />
+                                    <input
+                                      type="hidden"
+                                      name="subject"
+                                      value="I want to subscribe your newsletter"
+                                    />
                                     <div class="bdt-width-auto bdt-before-icon">
                                       <div class="bdt-newsletter-before-icon">
                                         <svg
@@ -1144,16 +1155,6 @@
                                         placeholder="Your email"
                                         required
                                         class="bdt-input"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="action"
-                                        value="element_pack_mailchimp_subscribe"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="bdt-sf-bdt-mailchimp-782870a"
-                                        value="true"
                                       />
                                       <!-- we need action parameter to receive ajax request in WordPress -->
                                     </div>
